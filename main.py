@@ -1,14 +1,8 @@
 class Student:
-    print('Hi!')
-    count = 0
-    def __init__(self, height = 150):
-        self.height = height
-        Student.count += 1
-    def breathing(self):
-        return self.height - 10
-oleg = Student() #об'єкт, екземпляр класу
-print(oleg.height)
-masha = Student(height = 200)
-print(masha.height)
-print(Student.count)
-print(masha.breathing())
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def info(self):
+        print(f"Ім'я: {self.name}, Вік: {self.age}")
+student = Student('Vasya', 23)
+student.info()
